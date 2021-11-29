@@ -49,7 +49,7 @@ const Search = () => {
   const handleOnChange = (e) => {
     if (e && e.target && e.target.value) {
       setSearchValue(e.target.value)
-      console.log(e, e.target.value)
+      // console.log(e, e.target.value)
     } else {
       setSearchValue('') // clear search values
     }
@@ -85,7 +85,7 @@ const Search = () => {
         </Row>
       </div>
       <br />
-      <div style={{ backgroundColor: 'red' }}>
+      <div>
         {searchResults && (
           <Row gutter={[16, 32]}>
             {searchResults.length ? searchResults.map(({ title, poster_path }, i) => {

@@ -6,6 +6,7 @@ import { Tabs } from 'antd'
 // Components
 import PopularMovies from '../PopularMovies'
 import TrendingMovies from '../TrendingMovies'
+import SearchMovies from '../SearchMovies'
 
 const { TabPane } = Tabs
 
@@ -15,9 +16,6 @@ const Home = () => {
       <div>
         <div className='jumbotron'>
           <h1 style={{ textAlign: 'center' }}>My Movies</h1>
-          {/* <div className='jumbotronFooter'>
-            <HomeApplicantSearch setInSearchName={setInSearchName} setInSearchContact={setInSearchContact} />
-          </div> */}
         </div>
         <Tabs type='card' style={{ margin: '-56px 1rem', textAlign: 'center' }}>
           <TabPane tab='Popular Movies' key='1'>
@@ -25,6 +23,9 @@ const Home = () => {
           </TabPane>
           <TabPane tab='Trending Movies' key='2'>
             <TrendingMovies />
+          </TabPane>
+          <TabPane tab='Search For Movies' key='3'>
+            <SearchMovies />
           </TabPane>
         </Tabs>
       </div>
